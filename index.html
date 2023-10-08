@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación de Citas Médicas</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Enlazar tu archivo de estilos CSS -->
+</head>
+<body>
+    <header>
+        <h1>Aplicación de Citas Médicas</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Agendar una Cita</h2>
+            <form id="cita-form">
+                <label for="nombre">Nombre del Paciente:</label>
+                <input type="text" id="nombre" required>
+                <label for="fecha">Fecha de la Cita:</label>
+                <input type="date" id="fecha" required>
+                <label for="tipo">Tipo de Cita:</label>
+                <select id="tipo" required>
+                    <option value="medico">Médico</option>
+                    <option value="especialista">Especialista</option>
+                </select>
+                <button type="submit">Agendar Cita</button>
+            </form>
+        </section>
+        <section>
+            <h2>Lista de Citas</h2>
+            <ul id="lista-pacientes">
+                <!-- Aquí se mostrarán las citas dinámicamente desde JavaScript -->
+            </ul>
+        </section>
+    </main>
+    <script src="script.js"></script> <!-- Enlazar tu archivo JavaScript -->
+</body>
+</html>
